@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Board</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+    <header id="main-header">
+      <h1>Task Planner</h1>
+    </header>
+    <section id="active-projects">
+      <header>
+        <h2>Active Tasks</h2>
+      </header>
+      <ul>
+        <li
+          id="p1"
+          data-extra-info="Got lifetime access, but would be nice to finish it soon!"
+          class="card"
+          draggable="true"
+        >
+          <h2>Start building project 'X'</h2>
+          <p>Deserunt id cupidatat excepteur ea Lorem eiusmod do ea et.</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+        <li
+          id="p2"
+          data-extra-info="Non dolor esse dolore aliqua sunt id exercitation Lorem sint et minim."
+          class="card"
+          draggable="true"
+        >
+          <h2>Exercise today</h2>
+          <p>
+            In qui commodo deserunt incididunt ad ad ex veniam ea duis in do.
+          </p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+      </ul>
+    </section>
+    <section id="finished-projects">
+      <header>
+        <h2>Finished Tasks</h2>
+      </header>
+      <ul>
+        <li
+          id="p3"
+          data-extra-info="Aute ea non qui commodo exercitation pariatur reprehenderit et."
+          class="card"
+          draggable="true"
+        >
+          <h2>Finish the new book</h2>
+          <p>
+            Aute labore ea enim labore sint nostrud labore commodo exercitation
+            labore.
+          </p>
+          <button class="alt">More Info</button>
+          <button>Activate</button>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
